@@ -30,7 +30,7 @@ public class ContactCreationTests {
   }
 
   private void submitContactCreation() {
-    wd.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Notes:'])[1]/following::input[1]")).click();
+    wd.findElement(By.xpath("(//input[@name='submit'])[2]")).click();
   }
 
   private void fillFormContact(ContactData contactData) {
@@ -65,7 +65,7 @@ public class ContactCreationTests {
     wd.findElement(By.name("pass")).click();
     wd.findElement(By.name("pass")).clear();
     wd.findElement(By.name("pass")).sendKeys(password);
-    wd.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Password:'])[1]/following::input[2]")).click();
+    wd.findElement(By.xpath("//form[@id='LoginForm']/input[3]")).click();
   }
 
   @AfterMethod
