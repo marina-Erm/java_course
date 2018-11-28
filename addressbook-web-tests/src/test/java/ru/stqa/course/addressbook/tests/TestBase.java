@@ -16,7 +16,7 @@ public class TestBase {
 
     @AfterMethod
     public void tearDown() throws Exception {
-        app.stop();
+        app.getContactHelper().stop();
 
     }
 
