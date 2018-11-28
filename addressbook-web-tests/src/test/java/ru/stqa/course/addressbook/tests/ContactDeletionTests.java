@@ -1,4 +1,4 @@
-package ru.stqa.course.addressbook;
+package ru.stqa.course.addressbook.tests;
 
 
 
@@ -10,10 +10,10 @@ public class ContactDeletionTests  extends TestBase{
 
   @Test
   public void testContactDeletion() throws Exception {
-    gotoHomePage();
-    selectContact();
-    deleteSelectedContacts();
-    initDeletedContacts();
+    app.gotoHomePage();
+    app.selectContact();
+    app.deleteSelectedContacts();
+    app.initDeletedContacts();
 
   }
 
