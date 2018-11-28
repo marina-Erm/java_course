@@ -8,8 +8,7 @@ import org.testng.annotations.BeforeMethod;
 import java.util.concurrent.TimeUnit;
 
 public class TestBase {
-    public boolean acceptNextAlert;
-    FirefoxDriver wd;
+        FirefoxDriver wd;
 
     @BeforeMethod
     public void setUp() throws Exception {
@@ -138,19 +137,7 @@ public class TestBase {
     }
 
 
-    protected String closeAlertAndGetItsText() {
-
-      try {
-        Alert alert = wd.switchTo().alert();
-        String alertText = alert.getText();
-        if (acceptNextAlert) {
-          alert.accept();
-        } else {
-          alert.dismiss();
-        }
-        return alertText;
-      } finally {
-        acceptNextAlert = true;
-      }
+    protected void initDeletedContacts() {
+      wd.switchTo().alert().accept();
     }
 }
