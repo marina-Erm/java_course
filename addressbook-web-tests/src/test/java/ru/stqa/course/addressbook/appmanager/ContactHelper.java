@@ -24,7 +24,7 @@ public class ContactHelper extends HelperBase {
     }
 
     public void selectContact() {
-        clickCont(By.id("8"));
+        clickCont(By.id("14"));
     }
 
     public void deleteSelectedContacts() {
