@@ -1,12 +1,13 @@
 package ru.stqa.course.addressbook.appmanager;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
 public class SessionComplited {
-    private FirefoxDriver wd;
+    private WebDriver wd;
 
-    public SessionComplited(FirefoxDriver wd) {
+    public SessionComplited(WebDriver wd) {
 
         this.wd = wd;
     }
