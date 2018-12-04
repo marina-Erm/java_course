@@ -33,7 +33,7 @@ public class ContactHelper extends HelperBase {
     }
 
     public void selectContact() {
-        clickCont(By.id("14"));
+        clickCont(By.name("selected[]"));
     }
 
     public void deleteSelectedContacts() {
@@ -60,4 +60,13 @@ public class ContactHelper extends HelperBase {
         clickCont(By.linkText("home page"));
     }
 
+    public void createContact(ContactData contact, boolean create) {
+        fillFormContact(contact, create);
+        submitContactCreation();
+        gotoHome();
+    }
+
+    public boolean isThereAContact() {
+        return isElementPresent(By.name("selected[]"));
+    }
 }
