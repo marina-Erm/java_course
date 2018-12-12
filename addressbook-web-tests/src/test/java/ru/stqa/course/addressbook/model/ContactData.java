@@ -3,6 +3,7 @@ package ru.stqa.course.addressbook.model;
 import java.util.Objects;
 
 public class ContactData {
+    private final String id;
     private final String name;
     private final String middlename;
     private final String lastname;
@@ -11,7 +12,19 @@ public class ContactData {
     private final String email;
     private String group;
 
-    public ContactData(String name, String middlename, String lastname, String nickname, String phone, String email, String group) {
+    public ContactData( String name, String middlename, String lastname, String nickname, String phone, String email, String group) {
+        this.id = null;
+        this.name = name;
+        this.middlename = middlename;
+        this.lastname = lastname;
+        this.nickname = nickname;
+        this.phone = phone;
+        this.email = email;
+        this.group = group;
+    }
+
+    public ContactData(String id, String name, String middlename, String lastname, String nickname, String phone, String email, String group) {
+        this.id = id;
         this.name = name;
         this.middlename = middlename;
         this.lastname = lastname;
@@ -24,7 +37,8 @@ public class ContactData {
     @Override
     public String toString() {
         return "ContactData{" +
-                "name='" + name + '\'' +
+                "id='" + id + '\'' +
+                ", name='" + name + '\'' +
                 ", lastname='" + lastname + '\'' +
                 ", phone='" + phone + '\'' +
                 ", email='" + email + '\'' +
@@ -36,7 +50,8 @@ public class ContactData {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         ContactData that = (ContactData) o;
-        return Objects.equals(name, that.name) &&
+        return Objects.equals(id, that.id) &&
+                Objects.equals(name, that.name) &&
                 Objects.equals(lastname, that.lastname) &&
                 Objects.equals(phone, that.phone) &&
                 Objects.equals(email, that.email);
@@ -44,7 +59,7 @@ public class ContactData {
 
     @Override
     public int hashCode() {
-        return Objects.hash(name, lastname, phone, email);
+        return Objects.hash(id, name, lastname, phone, email);
     }
 
     public String getName() {
@@ -73,5 +88,9 @@ public class ContactData {
 
     public String getGroup() {
         return group;
+    }
+
+    public String getId() {
+        return id;
     }
 }
