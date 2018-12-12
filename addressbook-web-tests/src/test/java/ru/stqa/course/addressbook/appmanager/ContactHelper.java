@@ -82,12 +82,10 @@ public class ContactHelper extends HelperBase {
     public List<ContactData> getContactList() {
         List<ContactData> contacts = new ArrayList<ContactData>();
         List<WebElement> elements = wd.findElements(By.name("entry"));
-      //  List<WebElement> rows = wd.findElements(By.tagName("tr"));
 
         for (WebElement element: elements) {
 
             List<WebElement> cells = element.findElements(By.tagName("td"));
-           // for (WebElement cell: cells) {
                 int id = Integer.parseInt(cells.get(0).findElement(By.tagName("input")).getAttribute("value"));
                 String name = cells.get(2).getText();
                 String lastname = cells.get(1).getText();
@@ -96,7 +94,7 @@ public class ContactHelper extends HelperBase {
                 ContactData contact = new ContactData(id,name,null,lastname, null, phone,email, null);
                 contacts.add(contact);
 
-          //  }
+
 
         }
 
