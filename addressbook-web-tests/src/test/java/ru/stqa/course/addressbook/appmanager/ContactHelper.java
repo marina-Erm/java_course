@@ -84,7 +84,6 @@ public class ContactHelper extends HelperBase {
         selectContact(index);
         deleteSelectedContacts();
         initDeletedContacts();
-        gotoHome();
     }
 
     public boolean isThereAContact() {
@@ -107,8 +106,7 @@ public class ContactHelper extends HelperBase {
                 String lastname = cells.get(1).getText();
                 String phone = cells.get(5).getText();
                 String email = cells.get(4).getText();
-                ContactData contact = new ContactData(id,name,null,lastname, null, phone,email, null);
-                contacts.add(contact);
+                contacts.add(new ContactData().withId(id).withName(name).withLastname(lastname).withPhone(phone).withEmail(email));
 
 
 

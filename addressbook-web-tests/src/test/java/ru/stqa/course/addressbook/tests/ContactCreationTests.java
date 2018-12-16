@@ -13,11 +13,11 @@ import java.util.List;
 public class ContactCreationTests extends TestBase {
 
 
-  @Test (enabled = false)
+  @Test (enabled = true)
   public void testContactCreation() throws Exception {
     List<ContactData> before = app.contact().list();
     app.goTo().contactPage();
-    ContactData contact = new ContactData("test3", "test2", "test3", "test4", "+79110001122", "test@test.com", "test1");
+    ContactData contact = new ContactData().withName("test3").withMiddlename("test2").withLastname("test3").withNickname("test4").withPhone("+79110001122").withEmail("test@test.com").withGroup("test1");
     app.contact().create(contact, true);
     List<ContactData> after = app.contact().list();
     Assert.assertEquals(after.size(), before.size() + 1);
