@@ -8,9 +8,23 @@ public class ContactData {
     private  String middlename;
     private  String lastname;
     private  String nickname;
+    private  String homePhone;
     private  String phone;
+    private  String workPhone;
     private  String email;
     private String group;
+    private String allPhones;
+
+    public String getAllPhones() {
+        return allPhones;
+    }
+
+    public ContactData withAllPhones(String allPhones) {
+        this.allPhones = allPhones;
+        return this;
+    }
+
+
 
 
     public ContactData withId(int id) {
@@ -38,10 +52,21 @@ public class ContactData {
         return this;
     }
 
+    public ContactData withhomePhone(String homePhone) {
+        this.homePhone = homePhone;
+        return this;
+    }
+
     public ContactData withPhone(String phone) {
         this.phone = phone;
         return this;
     }
+
+    public ContactData withworkPhone(String workPhone) {
+        this.workPhone = workPhone;
+        return this;
+    }
+
 
     public ContactData withEmail(String email) {
         this.email = email;
@@ -54,29 +79,36 @@ public class ContactData {
     }
 
     @Override
-    public String toString() {
-        return "ContactData{" +
-                "id='" + id + '\'' +
-                ", name='" + name + '\'' +
-                ", lastname='" + lastname + '\'' +
-                ", phone='" + phone + '\'' +
-                ", email='" + email + '\'' +
-                '}';
-    }
-
-    @Override
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         ContactData that = (ContactData) o;
         return id == that.id &&
                 Objects.equals(name, that.name) &&
-                Objects.equals(lastname, that.lastname);
+                Objects.equals(lastname, that.lastname) &&
+                Objects.equals(homePhone, that.homePhone) &&
+                Objects.equals(phone, that.phone) &&
+                Objects.equals(workPhone, that.workPhone) &&
+                Objects.equals(allPhones, that.allPhones);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(id, name, lastname);
+        return Objects.hash(id, name, lastname, homePhone, phone, workPhone, allPhones);
+    }
+
+    @Override
+    public String toString() {
+        return "ContactData{" +
+                "id='" + id + '\'' +
+                ", name='" + name + '\'' +
+                ", lastname='" + lastname + '\'' +
+                ", homePhone='" + homePhone + '\'' +
+                ", phone='" + phone + '\'' +
+                ", workPhone='" + workPhone + '\'' +
+                ", allPhones='" + allPhones + '\'' +
+             //   ", email='" + email + '\'' +
+                '}';
     }
 
     public String getName() {
@@ -95,8 +127,16 @@ public class ContactData {
         return nickname;
     }
 
+    public String getHomePhone() {
+        return homePhone;
+    }
+
     public String getPhone() {
         return phone;
+    }
+
+    public String getWorkPhone() {
+        return workPhone;
     }
 
     public String getEmail() {
