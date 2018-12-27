@@ -177,6 +177,7 @@ public class ContactData {
                 ", allEmail='" + allEmail + '\'' +
                 ", address='" + address + '\'' +
                 ", allAddress='" + allAddress + '\'' +
+                ", group='" + group + '\'' +
                 '}';
     }
 
