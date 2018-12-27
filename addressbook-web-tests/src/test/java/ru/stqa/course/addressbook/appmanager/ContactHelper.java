@@ -29,8 +29,13 @@ public class ContactHelper extends HelperBase {
         typeCont(By.name("middlename"), contactData.getMiddlename());
         typeCont(By.name("lastname"), contactData.getLastname());
         typeCont(By.name("nickname"), contactData.getNickname());
+        typeCont(By.name("address"), contactData.getAddress());
+        typeCont(By.name("home"), contactData.getHomePhone());
         typeCont(By.name("mobile"), contactData.getPhone());
+        typeCont(By.name("work"), contactData.getWorkPhone());
         typeCont(By.name("email"), contactData.getEmail());
+        typeCont(By.name("email2"), contactData.getEmail2());
+        typeCont(By.name("email3"), contactData.getEmail3());
         attach(By.name("photo"), contactData.getPhoto());
 
         if (creation) {
