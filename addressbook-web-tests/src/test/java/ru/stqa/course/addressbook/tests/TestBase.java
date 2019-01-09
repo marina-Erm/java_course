@@ -7,7 +7,8 @@ import ru.stqa.course.addressbook.appmanager.ApplicationManager;
 
 public class TestBase {
 
-    protected static final ApplicationManager app = new ApplicationManager(BrowserType.IE);
+    protected static final ApplicationManager app
+            = new ApplicationManager(System.getProperty("browser", BrowserType.IE));
 
     @BeforeSuite
     public void setUp() throws Exception {
