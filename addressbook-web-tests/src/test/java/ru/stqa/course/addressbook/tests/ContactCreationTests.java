@@ -39,13 +39,13 @@ public class ContactCreationTests extends TestBase {
 
   @Test(dataProvider = "validContacts")
   public void testContactCreation(ContactData contact) throws Exception {
-    Contacts before = app.contact().all();
+    Contacts before = app.db().contacts();
     app.goTo().contactPage();
    // File photo = new File("src/test/resources/stru.png");
   //  ContactData contact = new ContactData().withName("test3").withMiddlename("test2").withLastname("test3").withNickname("test4").withPhone("+79110001122").withEmail("test@test.com").withGroup("test1").withPhoto(photo);
     app.contact().create(contact.withGroup("test1"), true);
     assertThat(app.contact().contactCount(), equalTo(before.size() + 1));
-    Contacts after = app.contact().all();
+    Contacts after = app.db().contacts();
 
 
     assertThat(after, equalTo(

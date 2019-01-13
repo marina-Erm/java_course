@@ -3,16 +3,12 @@ package ru.stqa.course.addressbook.appmanager;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
 import ru.stqa.course.addressbook.model.ContactData;
 import ru.stqa.course.addressbook.model.Contacts;
 
-
-import java.util.HashSet;
 import java.util.List;
-import java.util.Set;
 
 public class ContactHelper extends HelperBase {
 
@@ -36,7 +32,7 @@ public class ContactHelper extends HelperBase {
         typeCont(By.name("email"), contactData.getEmail());
         typeCont(By.name("email2"), contactData.getEmail2());
         typeCont(By.name("email3"), contactData.getEmail3());
-        attach(By.name("photo"), contactData.getPhoto());
+       // attach(By.name("photo"), contactData.getPhoto());
 
         if (creation) new Select(wd.findElement(By.name("new_group"))).selectByVisibleText(contactData.getGroup());
         else {
