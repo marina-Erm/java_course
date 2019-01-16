@@ -5,6 +5,7 @@ import com.thoughtworks.xstream.XStream;
 import org.testng.annotations.*;
 import ru.stqa.course.addressbook.model.ContactData;
 import ru.stqa.course.addressbook.model.Contacts;
+import ru.stqa.course.addressbook.model.Groups;
 
 
 import java.io.*;
@@ -39,11 +40,12 @@ public class ContactCreationTests extends TestBase {
 
   @Test(dataProvider = "validContacts")
   public void testContactCreation(ContactData contact) throws Exception {
+    Groups groups = app.db().groups();
     Contacts before = app.db().contacts();
     app.goTo().contactPage();
    // File photo = new File("src/test/resources/stru.png");
   //  ContactData contact = new ContactData().withName("test3").withMiddlename("test2").withLastname("test3").withNickname("test4").withPhone("+79110001122").withEmail("test@test.com").withGroup("test1").withPhoto(photo);
-    app.contact().create(contact.withGroup("test1"), true);
+    app.contact().create(contact.inGroup(groups.iterator().next()), true);
     assertThat(app.contact().contactCount(), equalTo(before.size() + 1));
     Contacts after = app.db().contacts();
     assertThat(after, equalTo(
