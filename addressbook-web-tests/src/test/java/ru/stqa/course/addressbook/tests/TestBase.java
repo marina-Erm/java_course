@@ -50,4 +50,13 @@ public class TestBase {
                     .collect(Collectors.toSet())));
         }
     }
+    public void verifyContactInGroupListInUI(GroupData group) {
+        if (Boolean.getBoolean("verifyUI")) {
+            Contacts dbContacts = app.db().contInGroup(group);
+            Contacts uiContacts = app.contact().all();
+            assertThat(uiContacts, equalTo(dbContacts.stream()
+               .map((d) -> new ContactData().withId(d.getId()).withName(d.getName())
+                       .withLastname(d.getLastname())).collect(Collectors.toSet())));
+        }
+    }
 }

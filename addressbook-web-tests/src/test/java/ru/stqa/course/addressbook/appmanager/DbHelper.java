@@ -41,4 +41,15 @@ public class DbHelper {
         session.close();
         return new Contacts(result);
     }
+    public Contacts contInGroup(GroupData group) {
+        Session session = sessionFactory.openSession();
+        session.beginTransaction();
+        List<ContactData> result = session.createQuery( "select a from ContactData as a"+
+                .setParameter("group_name", group.getName()).list();
+        session.getTransaction().commit();
+        session.close();
+        return new Contacts(result);
+
+
+    }
 }

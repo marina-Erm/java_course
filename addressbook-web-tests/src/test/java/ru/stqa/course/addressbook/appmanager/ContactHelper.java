@@ -7,6 +7,7 @@ import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
 import ru.stqa.course.addressbook.model.ContactData;
 import ru.stqa.course.addressbook.model.Contacts;
+import ru.stqa.course.addressbook.model.GroupData;
 
 import java.util.List;
 
@@ -167,4 +168,41 @@ private Contacts contactCache = null;
             return new ContactData().withId(contact.getId()).withName(name)
                     .withLastname(lastname).withAddress(address);
     }
+
+
+
+    public void selectGroup(String group) {
+        new Select(wd.findElement(By.name("to_group"))).selectByVisibleText(group);
+    }
+
+    public void addInGroup() {
+        click(By.xpath("//input[@name='add']"));
+
+    }
+
+    public void goToGroupContacts(GroupData group) {
+
+        click(By.linkText("group page \"" + group.getName() + "\""));
+    }
+
+    public void addContactInGroup(ContactData cont, GroupData group) {
+        selectContactById(cont.getId());
+        selectGroup(group.getName());
+        addInGroup();
+        goToGroupContacts(group);
+    }
+
+
+    public void deleteContFromGroup(GroupData group, ContactData cont) {
+        selectContactById(cont.getId());
+        initDeleteContFromGroup();
+        goToGroupContacts(group);
+
+    }
+
+    public void initDeleteContFromGroup() {
+        click(By.cssSelector("input[name='remove']"));
+    }
+
+
 }

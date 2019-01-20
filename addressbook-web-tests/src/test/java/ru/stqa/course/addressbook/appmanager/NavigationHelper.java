@@ -2,7 +2,8 @@ package ru.stqa.course.addressbook.appmanager;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.support.ui.Select;
+import ru.stqa.course.addressbook.model.GroupData;
 
 public class NavigationHelper extends HelperBase{
 
@@ -21,8 +22,14 @@ public class NavigationHelper extends HelperBase{
     }
 
 
+
     public void contactPage() {
         click(By.linkText("add new"));
+    }
+
+    public void listContInGroup(GroupData group) {
+        new Select(wd.findElement(By.cssSelector("select[name=\"group\"]")))
+                .selectByVisibleText(group.getName());
     }
 
     public void homePage() {
