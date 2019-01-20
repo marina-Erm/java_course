@@ -45,8 +45,6 @@ public class DbHelper {
         Session session = sessionFactory.openSession();
         session.beginTransaction();
         List<ContactData> result = session.createQuery( "select a from ContactData as a"+
-                " join a.groups as b where b.name =: group_name and a.id in " +
-                "(select c.id from ContactData as c where deprecated = 0000-00-00)")
                 .setParameter("group_name", group.getName()).list();
         session.getTransaction().commit();
         session.close();
