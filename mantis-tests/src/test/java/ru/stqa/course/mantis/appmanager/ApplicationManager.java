@@ -24,7 +24,7 @@ public class ApplicationManager {
     private FtpHelper ftp;
     private MailHelper mailHelper;
     private JamesHelper jamesHelper;
-
+    private PasswordHelper passwordHelper;
 
 
     public ApplicationManager(String browser) {
@@ -79,6 +79,14 @@ public class ApplicationManager {
             registrationHelper = new RegistrationHelper(this);
         }
         return registrationHelper;
+    }
+
+
+    public PasswordHelper ph() {
+        if (passwordHelper == null) {
+            passwordHelper = new PasswordHelper(this);
+        }
+        return passwordHelper;
     }
 
     public WebDriver getDriver() {
