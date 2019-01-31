@@ -23,7 +23,7 @@ public class ContactModificationTests extends TestBase {
 
     @Test (enabled = true)
     public void testContactModification () {
-
+        skipIfNotFixed(1);
         Contacts before = app.db().contacts();
         ContactData modifiedContact = before.iterator().next();
         ContactData contact = new ContactData().withId(modifiedContact.getId()).withName("test3").withMiddlename("test2").withLastname("test3").withNickname("test4").withAddress("address1").withhomePhone("000000").withPhone("+79110001122").withworkPhone("123456").withEmail("test@test.com").withEmail2("t@t.com").withEmail3("test5@test.com");
