@@ -1,0 +1,419 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="ru.stqa.course.addressbook.tests.ContactCreationTests" tests="3" skipped="0" failures="3" errors="0" timestamp="2019-02-03T20:41:42" hostname="DESKTOP-DSN6I2U" time="5.764">
+  <properties/>
+  <testcase name="testContactCreation[0](ContactData{id='0', name='test 0', lastname='lastname 0', homePhone='123456 0', phone='456789 0', workPhone='789123 0', allPhones='null', email='test1@test.com 0', email2='test2@test.com 0', email3='test3@test.com 0', allEmail='null', address='address 0', allAddress='null'})" classname="ru.stqa.course.addressbook.tests.ContactCreationTests" time="3.369">
+    <failure message="java.lang.NullPointerException" type="java.lang.NullPointerException">java.lang.NullPointerException
+	at ru.stqa.course.addressbook.model.ContactData.inGroup(ContactData.java:274)
+	at ru.stqa.course.addressbook.tests.ContactCreationTests.testContactCreation(ContactCreationTests.java:48)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.gradle.api.internal.tasks.testing.testng.TestNGTestClassProcessor.runTests(TestNGTestClassProcessor.java:139)
+	at org.gradle.api.internal.tasks.testing.testng.TestNGTestClassProcessor.stop(TestNGTestClassProcessor.java:89)
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.stop(SuiteTestClassProcessor.java:61)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:32)
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:93)
+	at com.sun.proxy.$Proxy2.stop(Unknown Source)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.stop(TestWorker.java:131)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:155)
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:137)
+	at org.gradle.internal.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:404)
+	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:63)
+	at org.gradle.internal.concurrent.ManagedExecutorImpl$1.run(ManagedExecutorImpl.java:46)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:55)
+	at java.lang.Thread.run(Thread.java:748)
+</failure>
+  </testcase>
+  <testcase name="testContactCreation[1](ContactData{id='0', name='test 1', lastname='lastname 1', homePhone='123456 1', phone='456789 1', workPhone='789123 1', allPhones='null', email='test1@test.com 1', email2='test2@test.com 1', email3='test3@test.com 1', allEmail='null', address='address 1', allAddress='null'})" classname="ru.stqa.course.addressbook.tests.ContactCreationTests" time="1.24">
+    <failure message="java.lang.NullPointerException" type="java.lang.NullPointerException">java.lang.NullPointerException
+	at ru.stqa.course.addressbook.model.ContactData.inGroup(ContactData.java:274)
+	at ru.stqa.course.addressbook.tests.ContactCreationTests.testContactCreation(ContactCreationTests.java:48)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.gradle.api.internal.tasks.testing.testng.TestNGTestClassProcessor.runTests(TestNGTestClassProcessor.java:139)
+	at org.gradle.api.internal.tasks.testing.testng.TestNGTestClassProcessor.stop(TestNGTestClassProcessor.java:89)
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.stop(SuiteTestClassProcessor.java:61)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:32)
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:93)
+	at com.sun.proxy.$Proxy2.stop(Unknown Source)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.stop(TestWorker.java:131)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:155)
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:137)
+	at org.gradle.internal.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:404)
+	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:63)
+	at org.gradle.internal.concurrent.ManagedExecutorImpl$1.run(ManagedExecutorImpl.java:46)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:55)
+	at java.lang.Thread.run(Thread.java:748)
+</failure>
+  </testcase>
+  <testcase name="testContactCreation[2](ContactData{id='0', name='test 2', lastname='lastname 2', homePhone='123456 2', phone='456789 2', workPhone='789123 2', allPhones='null', email='test1@test.com 2', email2='test2@test.com 2', email3='test3@test.com 2', allEmail='null', address='address 2', allAddress='null'})" classname="ru.stqa.course.addressbook.tests.ContactCreationTests" time="1.154">
+    <failure message="java.lang.NullPointerException" type="java.lang.NullPointerException">java.lang.NullPointerException
+	at ru.stqa.course.addressbook.model.ContactData.inGroup(ContactData.java:274)
+	at ru.stqa.course.addressbook.tests.ContactCreationTests.testContactCreation(ContactCreationTests.java:48)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.gradle.api.internal.tasks.testing.testng.TestNGTestClassProcessor.runTests(TestNGTestClassProcessor.java:139)
+	at org.gradle.api.internal.tasks.testing.testng.TestNGTestClassProcessor.stop(TestNGTestClassProcessor.java:89)
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.stop(SuiteTestClassProcessor.java:61)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:32)
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:93)
+	at com.sun.proxy.$Proxy2.stop(Unknown Source)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.stop(TestWorker.java:131)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:155)
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:137)
+	at org.gradle.internal.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:404)
+	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:63)
+	at org.gradle.internal.concurrent.ManagedExecutorImpl$1.run(ManagedExecutorImpl.java:46)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:55)
+	at java.lang.Thread.run(Thread.java:748)
+</failure>
+  </testcase>
+  <system-out><![CDATA[23:41:42.366 [Test worker] DEBUG org.hibernate.stat.internal.StatisticsInitiator - Statistics initialized [enabled=false]
+23:41:42.400 [Test worker] DEBUG org.hibernate.engine.transaction.internal.TransactionImpl - On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+23:41:42.401 [Test worker] DEBUG org.hibernate.engine.transaction.internal.TransactionImpl - begin
+23:41:42.432 [Test worker] DEBUG org.hibernate.hql.internal.QueryTranslatorFactoryInitiator - QueryTranslatorFactory : org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory@49de7a
+23:41:42.432 [Test worker] INFO org.hibernate.hql.internal.QueryTranslatorFactoryInitiator - HHH000397: Using ASTQueryTranslatorFactory
+23:41:42.588 [Test worker] DEBUG org.hibernate.hql.internal.ast.QueryTranslatorImpl - parse() - HQL: from ru.stqa.course.addressbook.model.GroupData
+23:41:42.625 [Test worker] DEBUG org.hibernate.hql.internal.ast.ErrorTracker - throwQueryException() : no errors
+23:41:42.682 [Test worker] DEBUG org.hibernate.hql.internal.ast.QueryTranslatorImpl - --- HQL AST ---
+ \-[QUERY] Node: 'query'
+    \-[SELECT_FROM] Node: 'SELECT_FROM'
+       \-[FROM] Node: 'from'
+          \-[RANGE] Node: 'RANGE'
+             \-[DOT] Node: '.'
+                +-[DOT] Node: '.'
+                |  +-[DOT] Node: '.'
+                |  |  +-[DOT] Node: '.'
+                |  |  |  +-[DOT] Node: '.'
+                |  |  |  |  +-[IDENT] Node: 'ru'
+                |  |  |  |  \-[IDENT] Node: 'stqa'
+                |  |  |  \-[IDENT] Node: 'course'
+                |  |  \-[IDENT] Node: 'addressbook'
+                |  \-[IDENT] Node: 'model'
+                \-[IDENT] Node: 'GroupData'
+
+23:41:42.758 [Test worker] DEBUG org.hibernate.hql.internal.antlr.HqlSqlBaseWalker - select << begin [level=1, statement=select]
+23:41:42.780 [Test worker] DEBUG org.hibernate.hql.internal.ast.tree.FromElement - FromClause{level=1} : ru.stqa.course.addressbook.model.GroupData (<no alias>) -> groupdata0_
+23:41:42.780 [Test worker] DEBUG org.hibernate.hql.internal.antlr.HqlSqlBaseWalker - select : finishing up [level=1, statement=select]
+23:41:42.781 [Test worker] DEBUG org.hibernate.hql.internal.ast.HqlSqlWalker - processQuery() :  ( SELECT ( FromClause{level=1} group_list groupdata0_ ) )
+23:41:42.788 [Test worker] DEBUG org.hibernate.hql.internal.ast.HqlSqlWalker - Derived SELECT clause created.
+23:41:42.810 [Test worker] DEBUG org.hibernate.hql.internal.ast.util.JoinProcessor - Using FROM fragment [group_list groupdata0_]
+23:41:42.811 [Test worker] DEBUG org.hibernate.hql.internal.antlr.HqlSqlBaseWalker - select >> end [level=1, statement=select]
+23:41:42.811 [Test worker] DEBUG org.hibernate.hql.internal.ast.QueryTranslatorImpl - --- SQL AST ---
+ \-[SELECT] QueryNode: 'SELECT'  querySpaces (group_list)
+    +-[SELECT_CLAUSE] SelectClause: '{derived select clause}'
+    |  +-[SELECT_EXPR] SelectExpressionImpl: 'groupdata0_.group_id as group_id1_2_' {FromElement{explicit,not a collection join,not a fetch join,fetch non-lazy properties,classAlias=null,role=null,tableName=group_list,tableAlias=groupdata0_,origin=null,columns={,className=ru.stqa.course.addressbook.model.GroupData}}}
+    |  \-[SQL_TOKEN] SqlFragment: 'groupdata0_.group_footer as group_fo2_2_, groupdata0_.group_header as group_he3_2_, groupdata0_.group_name as group_na4_2_'
+    \-[FROM] FromClause: 'from' FromClause{level=1, fromElementCounter=1, fromElements=1, fromElementByClassAlias=[], fromElementByTableAlias=[groupdata0_], fromElementsByPath=[], collectionJoinFromElementsByPath=[], impliedElements=[]}
+       \-[FROM_FRAGMENT] FromElement: 'group_list groupdata0_' FromElement{explicit,not a collection join,not a fetch join,fetch non-lazy properties,classAlias=null,role=null,tableName=group_list,tableAlias=groupdata0_,origin=null,columns={,className=ru.stqa.course.addressbook.model.GroupData}}
+
+23:41:42.812 [Test worker] DEBUG org.hibernate.hql.internal.ast.ErrorTracker - throwQueryException() : no errors
+23:41:42.821 [Test worker] DEBUG org.hibernate.hql.internal.ast.QueryTranslatorImpl - HQL: from ru.stqa.course.addressbook.model.GroupData
+23:41:42.821 [Test worker] DEBUG org.hibernate.hql.internal.ast.QueryTranslatorImpl - SQL: select groupdata0_.group_id as group_id1_2_, groupdata0_.group_footer as group_fo2_2_, groupdata0_.group_header as group_he3_2_, groupdata0_.group_name as group_na4_2_ from group_list groupdata0_
+23:41:42.821 [Test worker] DEBUG org.hibernate.hql.internal.ast.ErrorTracker - throwQueryException() : no errors
+23:41:42.897 [Test worker] DEBUG org.hibernate.SQL - select groupdata0_.group_id as group_id1_2_, groupdata0_.group_footer as group_fo2_2_, groupdata0_.group_header as group_he3_2_, groupdata0_.group_name as group_na4_2_ from group_list groupdata0_
+Hibernate: select groupdata0_.group_id as group_id1_2_, groupdata0_.group_footer as group_fo2_2_, groupdata0_.group_header as group_he3_2_, groupdata0_.group_name as group_na4_2_ from group_list groupdata0_
+23:41:42.931 [Test worker] DEBUG org.hibernate.loader.Loader - Result set row: 0
+23:41:42.964 [Test worker] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[ru.stqa.course.addressbook.model.GroupData#35]
+23:41:42.986 [Test worker] DEBUG org.hibernate.loader.Loader - Result set row: 1
+23:41:42.987 [Test worker] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[ru.stqa.course.addressbook.model.GroupData#41]
+23:41:42.991 [Test worker] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Resolving associations for [ru.stqa.course.addressbook.model.GroupData#35]
+23:41:43.017 [Test worker] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Done materializing entity [ru.stqa.course.addressbook.model.GroupData#35]
+23:41:43.017 [Test worker] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Resolving associations for [ru.stqa.course.addressbook.model.GroupData#41]
+23:41:43.018 [Test worker] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Done materializing entity [ru.stqa.course.addressbook.model.GroupData#41]
+23:41:43.021 [Test worker] DEBUG org.hibernate.engine.transaction.internal.TransactionImpl - committing
+23:41:43.022 [Test worker] DEBUG org.hibernate.event.internal.AbstractFlushingEventListener - Processing flush-time cascades
+23:41:43.026 [Test worker] DEBUG org.hibernate.event.internal.AbstractFlushingEventListener - Dirty checking collections
+23:41:43.035 [Test worker] DEBUG org.hibernate.engine.internal.Collections - Collection found: [ru.stqa.course.addressbook.model.GroupData.contacts#35], was: [ru.stqa.course.addressbook.model.GroupData.contacts#35] (uninitialized)
+23:41:43.035 [Test worker] DEBUG org.hibernate.engine.internal.Collections - Collection found: [ru.stqa.course.addressbook.model.GroupData.contacts#41], was: [ru.stqa.course.addressbook.model.GroupData.contacts#41] (uninitialized)
+23:41:43.036 [Test worker] DEBUG org.hibernate.event.internal.AbstractFlushingEventListener - Flushed: 0 insertions, 0 updates, 0 deletions to 2 objects
+23:41:43.036 [Test worker] DEBUG org.hibernate.event.internal.AbstractFlushingEventListener - Flushed: 0 (re)creations, 0 updates, 0 removals to 2 collections
+23:41:43.038 [Test worker] DEBUG org.hibernate.internal.util.EntityPrinter - Listing entities:
+23:41:43.038 [Test worker] DEBUG org.hibernate.internal.util.EntityPrinter - ru.stqa.course.addressbook.model.GroupData{footer=ttt1, name=test2, header=ttt, id=41, contacts=<uninitialized>}
+23:41:43.038 [Test worker] DEBUG org.hibernate.internal.util.EntityPrinter - ru.stqa.course.addressbook.model.GroupData{footer=test3, name=test1, header=test2, id=35, contacts=<uninitialized>}
+23:41:43.040 [Test worker] DEBUG org.hibernate.resource.jdbc.internal.LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+23:41:43.041 [Test worker] DEBUG org.hibernate.resource.jdbc.internal.LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+23:41:43.044 [Test worker] DEBUG org.hibernate.engine.transaction.internal.TransactionImpl - On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+23:41:43.044 [Test worker] DEBUG org.hibernate.engine.transaction.internal.TransactionImpl - begin
+23:41:43.046 [Test worker] DEBUG org.hibernate.hql.internal.ast.QueryTranslatorImpl - parse() - HQL: from ru.stqa.course.addressbook.model.ContactData where deprecated = 0000-00-00
+23:41:43.047 [Test worker] DEBUG org.hibernate.hql.internal.ast.ErrorTracker - throwQueryException() : no errors
+23:41:43.048 [Test worker] DEBUG org.hibernate.hql.internal.ast.QueryTranslatorImpl - --- HQL AST ---
+ \-[QUERY] Node: 'query'
+    +-[SELECT_FROM] Node: 'SELECT_FROM'
+    |  \-[FROM] Node: 'from'
+    |     \-[RANGE] Node: 'RANGE'
+    |        \-[DOT] Node: '.'
+    |           +-[DOT] Node: '.'
+    |           |  +-[DOT] Node: '.'
+    |           |  |  +-[DOT] Node: '.'
+    |           |  |  |  +-[DOT] Node: '.'
+    |           |  |  |  |  +-[IDENT] Node: 'ru'
+    |           |  |  |  |  \-[IDENT] Node: 'stqa'
+    |           |  |  |  \-[IDENT] Node: 'course'
+    |           |  |  \-[IDENT] Node: 'addressbook'
+    |           |  \-[IDENT] Node: 'model'
+    |           \-[IDENT] Node: 'ContactData'
+    \-[WHERE] Node: 'where'
+       \-[EQ] Node: '='
+          +-[IDENT] Node: 'deprecated'
+          \-[MINUS] Node: '-'
+             +-[MINUS] Node: '-'
+             |  +-[NUM_INT] Node: '0000'
+             |  \-[NUM_INT] Node: '00'
+             \-[NUM_INT] Node: '00'
+
+23:41:43.049 [Test worker] DEBUG org.hibernate.hql.internal.antlr.HqlSqlBaseWalker - select << begin [level=1, statement=select]
+23:41:43.049 [Test worker] DEBUG org.hibernate.hql.internal.ast.tree.FromElement - FromClause{level=1} : ru.stqa.course.addressbook.model.ContactData (<no alias>) -> contactdat0_
+23:41:43.071 [Test worker] DEBUG org.hibernate.hql.internal.antlr.HqlSqlBaseWalker - select : finishing up [level=1, statement=select]
+23:41:43.071 [Test worker] DEBUG org.hibernate.hql.internal.ast.HqlSqlWalker - processQuery() :  ( SELECT ( FromClause{level=1} addressbook contactdat0_ ) ( where ( = deprecated ( - ( - 0 0 ) 0 ) ) ) )
+23:41:43.071 [Test worker] DEBUG org.hibernate.hql.internal.ast.HqlSqlWalker - Derived SELECT clause created.
+23:41:43.071 [Test worker] DEBUG org.hibernate.hql.internal.ast.util.JoinProcessor - Using FROM fragment [addressbook contactdat0_]
+23:41:43.071 [Test worker] DEBUG org.hibernate.hql.internal.antlr.HqlSqlBaseWalker - select >> end [level=1, statement=select]
+23:41:43.072 [Test worker] DEBUG org.hibernate.hql.internal.ast.QueryTranslatorImpl - --- SQL AST ---
+ \-[SELECT] QueryNode: 'SELECT'  querySpaces (addressbook)
+    +-[SELECT_CLAUSE] SelectClause: '{derived select clause}'
+    |  +-[SELECT_EXPR] SelectExpressionImpl: 'contactdat0_.id as id1_1_' {FromElement{explicit,not a collection join,not a fetch join,fetch non-lazy properties,classAlias=null,role=null,tableName=addressbook,tableAlias=contactdat0_,origin=null,columns={,className=ru.stqa.course.addressbook.model.ContactData}}}
+    |  \-[SQL_TOKEN] SqlFragment: 'contactdat0_.address as address2_1_, contactdat0_.email as email3_1_, contactdat0_.email2 as email4_1_, contactdat0_.email3 as email5_1_, contactdat0_.home as home6_1_, contactdat0_.lastname as lastname7_1_, contactdat0_.middlename as middlena8_1_, contactdat0_.firstname as firstnam9_1_, contactdat0_.nickname as nicknam10_1_, contactdat0_.mobile as mobile11_1_, contactdat0_.photo as photo12_1_, contactdat0_.work as work13_1_'
+    +-[FROM] FromClause: 'from' FromClause{level=1, fromElementCounter=1, fromElements=1, fromElementByClassAlias=[], fromElementByTableAlias=[contactdat0_], fromElementsByPath=[], collectionJoinFromElementsByPath=[], impliedElements=[]}
+    |  \-[FROM_FRAGMENT] FromElement: 'addressbook contactdat0_' FromElement{explicit,not a collection join,not a fetch join,fetch non-lazy properties,classAlias=null,role=null,tableName=addressbook,tableAlias=contactdat0_,origin=null,columns={,className=ru.stqa.course.addressbook.model.ContactData}}
+    \-[WHERE] SqlNode: 'where'
+       \-[EQ] BinaryLogicOperatorNode: '='
+          +-[IDENT] IdentNode: 'deprecated' {originalText=deprecated}
+          \-[MINUS] BinaryArithmeticOperatorNode: '-' {dataType=org.hibernate.type.IntegerType@70dc4}
+             +-[MINUS] BinaryArithmeticOperatorNode: '-' {dataType=org.hibernate.type.IntegerType@70dc4}
+             |  +-[NUM_INT] LiteralNode: '0'
+             |  \-[NUM_INT] LiteralNode: '0'
+             \-[NUM_INT] LiteralNode: '0'
+
+23:41:43.072 [Test worker] DEBUG org.hibernate.hql.internal.ast.ErrorTracker - throwQueryException() : no errors
+23:41:43.073 [Test worker] DEBUG org.hibernate.hql.internal.ast.QueryTranslatorImpl - HQL: from ru.stqa.course.addressbook.model.ContactData where deprecated = 0000-00-00
+23:41:43.073 [Test worker] DEBUG org.hibernate.hql.internal.ast.QueryTranslatorImpl - SQL: select contactdat0_.id as id1_1_, contactdat0_.address as address2_1_, contactdat0_.email as email3_1_, contactdat0_.email2 as email4_1_, contactdat0_.email3 as email5_1_, contactdat0_.home as home6_1_, contactdat0_.lastname as lastname7_1_, contactdat0_.middlename as middlena8_1_, contactdat0_.firstname as firstnam9_1_, contactdat0_.nickname as nicknam10_1_, contactdat0_.mobile as mobile11_1_, contactdat0_.photo as photo12_1_, contactdat0_.work as work13_1_ from addressbook contactdat0_ where deprecated=0-0-0
+23:41:43.073 [Test worker] DEBUG org.hibernate.hql.internal.ast.ErrorTracker - throwQueryException() : no errors
+23:41:43.073 [Test worker] DEBUG org.hibernate.SQL - select contactdat0_.id as id1_1_, contactdat0_.address as address2_1_, contactdat0_.email as email3_1_, contactdat0_.email2 as email4_1_, contactdat0_.email3 as email5_1_, contactdat0_.home as home6_1_, contactdat0_.lastname as lastname7_1_, contactdat0_.middlename as middlena8_1_, contactdat0_.firstname as firstnam9_1_, contactdat0_.nickname as nicknam10_1_, contactdat0_.mobile as mobile11_1_, contactdat0_.photo as photo12_1_, contactdat0_.work as work13_1_ from addressbook contactdat0_ where deprecated=0-0-0
+Hibernate: select contactdat0_.id as id1_1_, contactdat0_.address as address2_1_, contactdat0_.email as email3_1_, contactdat0_.email2 as email4_1_, contactdat0_.email3 as email5_1_, contactdat0_.home as home6_1_, contactdat0_.lastname as lastname7_1_, contactdat0_.middlename as middlena8_1_, contactdat0_.firstname as firstnam9_1_, contactdat0_.nickname as nicknam10_1_, contactdat0_.mobile as mobile11_1_, contactdat0_.photo as photo12_1_, contactdat0_.work as work13_1_ from addressbook contactdat0_ where deprecated=0-0-0
+23:41:43.114 [Test worker] DEBUG org.hibernate.loader.Loader - Result set row: 0
+23:41:43.114 [Test worker] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[ru.stqa.course.addressbook.model.ContactData#79]
+23:41:43.115 [Test worker] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Resolving associations for [ru.stqa.course.addressbook.model.ContactData#79]
+23:41:43.116 [Test worker] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Done materializing entity [ru.stqa.course.addressbook.model.ContactData#79]
+23:41:43.120 [Test worker] DEBUG org.hibernate.loader.collection.plan.AbstractLoadPlanBasedCollectionInitializer - Loading collection: [ru.stqa.course.addressbook.model.ContactData.groups#79]
+23:41:43.121 [Test worker] DEBUG org.hibernate.SQL - select groups0_.id as id1_0_0_, groups0_.group_id as group_id2_0_0_, groupdata1_.group_id as group_id1_2_1_, groupdata1_.group_footer as group_fo2_2_1_, groupdata1_.group_header as group_he3_2_1_, groupdata1_.group_name as group_na4_2_1_ from address_in_groups groups0_ inner join group_list groupdata1_ on groups0_.group_id=groupdata1_.group_id where groups0_.id=?
+Hibernate: select groups0_.id as id1_0_0_, groups0_.group_id as group_id2_0_0_, groupdata1_.group_id as group_id1_2_1_, groupdata1_.group_footer as group_fo2_2_1_, groupdata1_.group_header as group_he3_2_1_, groupdata1_.group_name as group_na4_2_1_ from address_in_groups groups0_ inner join group_list groupdata1_ on groups0_.group_id=groupdata1_.group_id where groups0_.id=?
+23:41:43.165 [Test worker] DEBUG org.hibernate.loader.plan.exec.process.internal.ResultSetProcessorImpl - Preparing collection intializer : [ru.stqa.course.addressbook.model.ContactData.groups#79]
+23:41:43.174 [Test worker] DEBUG org.hibernate.engine.loading.internal.CollectionLoadContext - 1 collections were found in result set for role: ru.stqa.course.addressbook.model.ContactData.groups
+23:41:43.175 [Test worker] DEBUG org.hibernate.engine.loading.internal.CollectionLoadContext - Collection fully initialized: [ru.stqa.course.addressbook.model.ContactData.groups#79]
+23:41:43.175 [Test worker] DEBUG org.hibernate.engine.loading.internal.CollectionLoadContext - 1 collections initialized for role: ru.stqa.course.addressbook.model.ContactData.groups
+23:41:43.176 [Test worker] DEBUG org.hibernate.resource.jdbc.internal.ResourceRegistryStandardImpl - HHH000387: ResultSet's statement was not registered
+23:41:43.176 [Test worker] DEBUG org.hibernate.loader.collection.plan.AbstractLoadPlanBasedCollectionInitializer - Done loading collection
+23:41:43.176 [Test worker] DEBUG org.hibernate.engine.transaction.internal.TransactionImpl - committing
+23:41:43.176 [Test worker] DEBUG org.hibernate.event.internal.AbstractFlushingEventListener - Processing flush-time cascades
+23:41:43.176 [Test worker] DEBUG org.hibernate.event.internal.AbstractFlushingEventListener - Dirty checking collections
+23:41:43.177 [Test worker] DEBUG org.hibernate.engine.internal.Collections - Collection found: [ru.stqa.course.addressbook.model.ContactData.groups#79], was: [ru.stqa.course.addressbook.model.ContactData.groups#79] (initialized)
+23:41:43.178 [Test worker] DEBUG org.hibernate.event.internal.AbstractFlushingEventListener - Flushed: 0 insertions, 0 updates, 0 deletions to 1 objects
+23:41:43.178 [Test worker] DEBUG org.hibernate.event.internal.AbstractFlushingEventListener - Flushed: 0 (re)creations, 0 updates, 0 removals to 1 collections
+23:41:43.178 [Test worker] DEBUG org.hibernate.internal.util.EntityPrinter - Listing entities:
+23:41:43.181 [Test worker] DEBUG org.hibernate.internal.util.EntityPrinter - ru.stqa.course.addressbook.model.ContactData{address=address1, homePhone=000000, groups=[], middlename=test2, photo=PHOTO;ENCODING=BASE64;TYPE=JPEG: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, lastname=test3, email3=test5@test.com, email2=t@t.com, phone=+79110001122, name=test3, nickname=test4, workPhone=123456, id=79, email=test@test.com}
+23:41:43.183 [Test worker] DEBUG org.hibernate.resource.jdbc.internal.LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+23:41:43.185 [Test worker] DEBUG org.hibernate.resource.jdbc.internal.LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+23:41:45.443 [Test worker] DEBUG org.hibernate.engine.transaction.internal.TransactionImpl - On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+23:41:45.443 [Test worker] DEBUG org.hibernate.engine.transaction.internal.TransactionImpl - begin
+23:41:45.446 [Test worker] DEBUG org.hibernate.SQL - select groupdata0_.group_id as group_id1_2_, groupdata0_.group_footer as group_fo2_2_, groupdata0_.group_header as group_he3_2_, groupdata0_.group_name as group_na4_2_ from group_list groupdata0_
+Hibernate: select groupdata0_.group_id as group_id1_2_, groupdata0_.group_footer as group_fo2_2_, groupdata0_.group_header as group_he3_2_, groupdata0_.group_name as group_na4_2_ from group_list groupdata0_
+23:41:45.449 [Test worker] DEBUG org.hibernate.loader.Loader - Result set row: 0
+23:41:45.449 [Test worker] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[ru.stqa.course.addressbook.model.GroupData#35]
+23:41:45.450 [Test worker] DEBUG org.hibernate.loader.Loader - Result set row: 1
+23:41:45.450 [Test worker] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[ru.stqa.course.addressbook.model.GroupData#41]
+23:41:45.450 [Test worker] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Resolving associations for [ru.stqa.course.addressbook.model.GroupData#35]
+23:41:45.450 [Test worker] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Done materializing entity [ru.stqa.course.addressbook.model.GroupData#35]
+23:41:45.451 [Test worker] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Resolving associations for [ru.stqa.course.addressbook.model.GroupData#41]
+23:41:45.451 [Test worker] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Done materializing entity [ru.stqa.course.addressbook.model.GroupData#41]
+23:41:45.451 [Test worker] DEBUG org.hibernate.engine.transaction.internal.TransactionImpl - committing
+23:41:45.451 [Test worker] DEBUG org.hibernate.event.internal.AbstractFlushingEventListener - Processing flush-time cascades
+23:41:45.451 [Test worker] DEBUG org.hibernate.event.internal.AbstractFlushingEventListener - Dirty checking collections
+23:41:45.452 [Test worker] DEBUG org.hibernate.engine.internal.Collections - Collection found: [ru.stqa.course.addressbook.model.GroupData.contacts#35], was: [ru.stqa.course.addressbook.model.GroupData.contacts#35] (uninitialized)
+23:41:45.452 [Test worker] DEBUG org.hibernate.engine.internal.Collections - Collection found: [ru.stqa.course.addressbook.model.GroupData.contacts#41], was: [ru.stqa.course.addressbook.model.GroupData.contacts#41] (uninitialized)
+23:41:45.452 [Test worker] DEBUG org.hibernate.event.internal.AbstractFlushingEventListener - Flushed: 0 insertions, 0 updates, 0 deletions to 2 objects
+23:41:45.452 [Test worker] DEBUG org.hibernate.event.internal.AbstractFlushingEventListener - Flushed: 0 (re)creations, 0 updates, 0 removals to 2 collections
+23:41:45.452 [Test worker] DEBUG org.hibernate.internal.util.EntityPrinter - Listing entities:
+23:41:45.452 [Test worker] DEBUG org.hibernate.internal.util.EntityPrinter - ru.stqa.course.addressbook.model.GroupData{footer=ttt1, name=test2, header=ttt, id=41, contacts=<uninitialized>}
+23:41:45.453 [Test worker] DEBUG org.hibernate.internal.util.EntityPrinter - ru.stqa.course.addressbook.model.GroupData{footer=test3, name=test1, header=test2, id=35, contacts=<uninitialized>}
+23:41:45.454 [Test worker] DEBUG org.hibernate.resource.jdbc.internal.LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+23:41:45.455 [Test worker] DEBUG org.hibernate.resource.jdbc.internal.LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+23:41:45.456 [Test worker] DEBUG org.hibernate.engine.transaction.internal.TransactionImpl - On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+23:41:45.456 [Test worker] DEBUG org.hibernate.engine.transaction.internal.TransactionImpl - begin
+23:41:45.459 [Test worker] DEBUG org.hibernate.SQL - select contactdat0_.id as id1_1_, contactdat0_.address as address2_1_, contactdat0_.email as email3_1_, contactdat0_.email2 as email4_1_, contactdat0_.email3 as email5_1_, contactdat0_.home as home6_1_, contactdat0_.lastname as lastname7_1_, contactdat0_.middlename as middlena8_1_, contactdat0_.firstname as firstnam9_1_, contactdat0_.nickname as nicknam10_1_, contactdat0_.mobile as mobile11_1_, contactdat0_.photo as photo12_1_, contactdat0_.work as work13_1_ from addressbook contactdat0_ where deprecated=0-0-0
+Hibernate: select contactdat0_.id as id1_1_, contactdat0_.address as address2_1_, contactdat0_.email as email3_1_, contactdat0_.email2 as email4_1_, contactdat0_.email3 as email5_1_, contactdat0_.home as home6_1_, contactdat0_.lastname as lastname7_1_, contactdat0_.middlename as middlena8_1_, contactdat0_.firstname as firstnam9_1_, contactdat0_.nickname as nicknam10_1_, contactdat0_.mobile as mobile11_1_, contactdat0_.photo as photo12_1_, contactdat0_.work as work13_1_ from addressbook contactdat0_ where deprecated=0-0-0
+23:41:45.467 [Test worker] DEBUG org.hibernate.loader.Loader - Result set row: 0
+23:41:45.468 [Test worker] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[ru.stqa.course.addressbook.model.ContactData#79]
+23:41:45.469 [Test worker] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Resolving associations for [ru.stqa.course.addressbook.model.ContactData#79]
+23:41:45.469 [Test worker] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Done materializing entity [ru.stqa.course.addressbook.model.ContactData#79]
+23:41:45.470 [Test worker] DEBUG org.hibernate.loader.collection.plan.AbstractLoadPlanBasedCollectionInitializer - Loading collection: [ru.stqa.course.addressbook.model.ContactData.groups#79]
+23:41:45.470 [Test worker] DEBUG org.hibernate.SQL - select groups0_.id as id1_0_0_, groups0_.group_id as group_id2_0_0_, groupdata1_.group_id as group_id1_2_1_, groupdata1_.group_footer as group_fo2_2_1_, groupdata1_.group_header as group_he3_2_1_, groupdata1_.group_name as group_na4_2_1_ from address_in_groups groups0_ inner join group_list groupdata1_ on groups0_.group_id=groupdata1_.group_id where groups0_.id=?
+Hibernate: select groups0_.id as id1_0_0_, groups0_.group_id as group_id2_0_0_, groupdata1_.group_id as group_id1_2_1_, groupdata1_.group_footer as group_fo2_2_1_, groupdata1_.group_header as group_he3_2_1_, groupdata1_.group_name as group_na4_2_1_ from address_in_groups groups0_ inner join group_list groupdata1_ on groups0_.group_id=groupdata1_.group_id where groups0_.id=?
+23:41:45.474 [Test worker] DEBUG org.hibernate.loader.plan.exec.process.internal.ResultSetProcessorImpl - Preparing collection intializer : [ru.stqa.course.addressbook.model.ContactData.groups#79]
+23:41:45.474 [Test worker] DEBUG org.hibernate.engine.loading.internal.CollectionLoadContext - 1 collections were found in result set for role: ru.stqa.course.addressbook.model.ContactData.groups
+23:41:45.474 [Test worker] DEBUG org.hibernate.engine.loading.internal.CollectionLoadContext - Collection fully initialized: [ru.stqa.course.addressbook.model.ContactData.groups#79]
+23:41:45.474 [Test worker] DEBUG org.hibernate.engine.loading.internal.CollectionLoadContext - 1 collections initialized for role: ru.stqa.course.addressbook.model.ContactData.groups
+23:41:45.474 [Test worker] DEBUG org.hibernate.resource.jdbc.internal.ResourceRegistryStandardImpl - HHH000387: ResultSet's statement was not registered
+23:41:45.475 [Test worker] DEBUG org.hibernate.loader.collection.plan.AbstractLoadPlanBasedCollectionInitializer - Done loading collection
+23:41:45.475 [Test worker] DEBUG org.hibernate.engine.transaction.internal.TransactionImpl - committing
+23:41:45.475 [Test worker] DEBUG org.hibernate.event.internal.AbstractFlushingEventListener - Processing flush-time cascades
+23:41:45.475 [Test worker] DEBUG org.hibernate.event.internal.AbstractFlushingEventListener - Dirty checking collections
+23:41:45.475 [Test worker] DEBUG org.hibernate.engine.internal.Collections - Collection found: [ru.stqa.course.addressbook.model.ContactData.groups#79], was: [ru.stqa.course.addressbook.model.ContactData.groups#79] (initialized)
+23:41:45.475 [Test worker] DEBUG org.hibernate.event.internal.AbstractFlushingEventListener - Flushed: 0 insertions, 0 updates, 0 deletions to 1 objects
+23:41:45.475 [Test worker] DEBUG org.hibernate.event.internal.AbstractFlushingEventListener - Flushed: 0 (re)creations, 0 updates, 0 removals to 1 collections
+23:41:45.475 [Test worker] DEBUG org.hibernate.internal.util.EntityPrinter - Listing entities:
+23:41:45.476 [Test worker] DEBUG org.hibernate.internal.util.EntityPrinter - ru.stqa.course.addressbook.model.ContactData{address=address1, homePhone=000000, groups=[], middlename=test2, photo=PHOTO;ENCODING=BASE64;TYPE=JPEG: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, lastname=test3, email3=test5@test.com, email2=t@t.com, phone=+79110001122, name=test3, nickname=test4, workPhone=123456, id=79, email=test@test.com}
+23:41:45.482 [Test worker] DEBUG org.hibernate.resource.jdbc.internal.LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+23:41:45.492 [Test worker] DEBUG org.hibernate.resource.jdbc.internal.LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+23:41:46.682 [Test worker] DEBUG org.hibernate.engine.transaction.internal.TransactionImpl - On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+23:41:46.682 [Test worker] DEBUG org.hibernate.engine.transaction.internal.TransactionImpl - begin
+23:41:46.684 [Test worker] DEBUG org.hibernate.SQL - select groupdata0_.group_id as group_id1_2_, groupdata0_.group_footer as group_fo2_2_, groupdata0_.group_header as group_he3_2_, groupdata0_.group_name as group_na4_2_ from group_list groupdata0_
+Hibernate: select groupdata0_.group_id as group_id1_2_, groupdata0_.group_footer as group_fo2_2_, groupdata0_.group_header as group_he3_2_, groupdata0_.group_name as group_na4_2_ from group_list groupdata0_
+23:41:46.686 [Test worker] DEBUG org.hibernate.loader.Loader - Result set row: 0
+23:41:46.686 [Test worker] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[ru.stqa.course.addressbook.model.GroupData#35]
+23:41:46.687 [Test worker] DEBUG org.hibernate.loader.Loader - Result set row: 1
+23:41:46.687 [Test worker] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[ru.stqa.course.addressbook.model.GroupData#41]
+23:41:46.687 [Test worker] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Resolving associations for [ru.stqa.course.addressbook.model.GroupData#35]
+23:41:46.687 [Test worker] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Done materializing entity [ru.stqa.course.addressbook.model.GroupData#35]
+23:41:46.687 [Test worker] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Resolving associations for [ru.stqa.course.addressbook.model.GroupData#41]
+23:41:46.687 [Test worker] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Done materializing entity [ru.stqa.course.addressbook.model.GroupData#41]
+23:41:46.688 [Test worker] DEBUG org.hibernate.engine.transaction.internal.TransactionImpl - committing
+23:41:46.688 [Test worker] DEBUG org.hibernate.event.internal.AbstractFlushingEventListener - Processing flush-time cascades
+23:41:46.688 [Test worker] DEBUG org.hibernate.event.internal.AbstractFlushingEventListener - Dirty checking collections
+23:41:46.688 [Test worker] DEBUG org.hibernate.engine.internal.Collections - Collection found: [ru.stqa.course.addressbook.model.GroupData.contacts#35], was: [ru.stqa.course.addressbook.model.GroupData.contacts#35] (uninitialized)
+23:41:46.688 [Test worker] DEBUG org.hibernate.engine.internal.Collections - Collection found: [ru.stqa.course.addressbook.model.GroupData.contacts#41], was: [ru.stqa.course.addressbook.model.GroupData.contacts#41] (uninitialized)
+23:41:46.688 [Test worker] DEBUG org.hibernate.event.internal.AbstractFlushingEventListener - Flushed: 0 insertions, 0 updates, 0 deletions to 2 objects
+23:41:46.688 [Test worker] DEBUG org.hibernate.event.internal.AbstractFlushingEventListener - Flushed: 0 (re)creations, 0 updates, 0 removals to 2 collections
+23:41:46.688 [Test worker] DEBUG org.hibernate.internal.util.EntityPrinter - Listing entities:
+23:41:46.689 [Test worker] DEBUG org.hibernate.internal.util.EntityPrinter - ru.stqa.course.addressbook.model.GroupData{footer=ttt1, name=test2, header=ttt, id=41, contacts=<uninitialized>}
+23:41:46.689 [Test worker] DEBUG org.hibernate.internal.util.EntityPrinter - ru.stqa.course.addressbook.model.GroupData{footer=test3, name=test1, header=test2, id=35, contacts=<uninitialized>}
+23:41:46.706 [Test worker] DEBUG org.hibernate.resource.jdbc.internal.LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+23:41:46.708 [Test worker] DEBUG org.hibernate.resource.jdbc.internal.LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+23:41:46.709 [Test worker] DEBUG org.hibernate.engine.transaction.internal.TransactionImpl - On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+23:41:46.709 [Test worker] DEBUG org.hibernate.engine.transaction.internal.TransactionImpl - begin
+23:41:46.711 [Test worker] DEBUG org.hibernate.SQL - select contactdat0_.id as id1_1_, contactdat0_.address as address2_1_, contactdat0_.email as email3_1_, contactdat0_.email2 as email4_1_, contactdat0_.email3 as email5_1_, contactdat0_.home as home6_1_, contactdat0_.lastname as lastname7_1_, contactdat0_.middlename as middlena8_1_, contactdat0_.firstname as firstnam9_1_, contactdat0_.nickname as nicknam10_1_, contactdat0_.mobile as mobile11_1_, contactdat0_.photo as photo12_1_, contactdat0_.work as work13_1_ from addressbook contactdat0_ where deprecated=0-0-0
+Hibernate: select contactdat0_.id as id1_1_, contactdat0_.address as address2_1_, contactdat0_.email as email3_1_, contactdat0_.email2 as email4_1_, contactdat0_.email3 as email5_1_, contactdat0_.home as home6_1_, contactdat0_.lastname as lastname7_1_, contactdat0_.middlename as middlena8_1_, contactdat0_.firstname as firstnam9_1_, contactdat0_.nickname as nicknam10_1_, contactdat0_.mobile as mobile11_1_, contactdat0_.photo as photo12_1_, contactdat0_.work as work13_1_ from addressbook contactdat0_ where deprecated=0-0-0
+23:41:46.714 [Test worker] DEBUG org.hibernate.loader.Loader - Result set row: 0
+23:41:46.714 [Test worker] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[ru.stqa.course.addressbook.model.ContactData#79]
+23:41:46.715 [Test worker] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Resolving associations for [ru.stqa.course.addressbook.model.ContactData#79]
+23:41:46.715 [Test worker] DEBUG org.hibernate.engine.internal.TwoPhaseLoad - Done materializing entity [ru.stqa.course.addressbook.model.ContactData#79]
+23:41:46.715 [Test worker] DEBUG org.hibernate.loader.collection.plan.AbstractLoadPlanBasedCollectionInitializer - Loading collection: [ru.stqa.course.addressbook.model.ContactData.groups#79]
+23:41:46.715 [Test worker] DEBUG org.hibernate.SQL - select groups0_.id as id1_0_0_, groups0_.group_id as group_id2_0_0_, groupdata1_.group_id as group_id1_2_1_, groupdata1_.group_footer as group_fo2_2_1_, groupdata1_.group_header as group_he3_2_1_, groupdata1_.group_name as group_na4_2_1_ from address_in_groups groups0_ inner join group_list groupdata1_ on groups0_.group_id=groupdata1_.group_id where groups0_.id=?
+Hibernate: select groups0_.id as id1_0_0_, groups0_.group_id as group_id2_0_0_, groupdata1_.group_id as group_id1_2_1_, groupdata1_.group_footer as group_fo2_2_1_, groupdata1_.group_header as group_he3_2_1_, groupdata1_.group_name as group_na4_2_1_ from address_in_groups groups0_ inner join group_list groupdata1_ on groups0_.group_id=groupdata1_.group_id where groups0_.id=?
+23:41:46.729 [Test worker] DEBUG org.hibernate.loader.plan.exec.process.internal.ResultSetProcessorImpl - Preparing collection intializer : [ru.stqa.course.addressbook.model.ContactData.groups#79]
+23:41:46.729 [Test worker] DEBUG org.hibernate.engine.loading.internal.CollectionLoadContext - 1 collections were found in result set for role: ru.stqa.course.addressbook.model.ContactData.groups
+23:41:46.729 [Test worker] DEBUG org.hibernate.engine.loading.internal.CollectionLoadContext - Collection fully initialized: [ru.stqa.course.addressbook.model.ContactData.groups#79]
+23:41:46.729 [Test worker] DEBUG org.hibernate.engine.loading.internal.CollectionLoadContext - 1 collections initialized for role: ru.stqa.course.addressbook.model.ContactData.groups
+23:41:46.729 [Test worker] DEBUG org.hibernate.resource.jdbc.internal.ResourceRegistryStandardImpl - HHH000387: ResultSet's statement was not registered
+23:41:46.730 [Test worker] DEBUG org.hibernate.loader.collection.plan.AbstractLoadPlanBasedCollectionInitializer - Done loading collection
+23:41:46.730 [Test worker] DEBUG org.hibernate.engine.transaction.internal.TransactionImpl - committing
+23:41:46.730 [Test worker] DEBUG org.hibernate.event.internal.AbstractFlushingEventListener - Processing flush-time cascades
+23:41:46.730 [Test worker] DEBUG org.hibernate.event.internal.AbstractFlushingEventListener - Dirty checking collections
+23:41:46.730 [Test worker] DEBUG org.hibernate.engine.internal.Collections - Collection found: [ru.stqa.course.addressbook.model.ContactData.groups#79], was: [ru.stqa.course.addressbook.model.ContactData.groups#79] (initialized)
+23:41:46.730 [Test worker] DEBUG org.hibernate.event.internal.AbstractFlushingEventListener - Flushed: 0 insertions, 0 updates, 0 deletions to 1 objects
+23:41:46.731 [Test worker] DEBUG org.hibernate.event.internal.AbstractFlushingEventListener - Flushed: 0 (re)creations, 0 updates, 0 removals to 1 collections
+23:41:46.731 [Test worker] DEBUG org.hibernate.internal.util.EntityPrinter - Listing entities:
+23:41:46.731 [Test worker] DEBUG org.hibernate.internal.util.EntityPrinter - ru.stqa.course.addressbook.model.ContactData{address=address1, homePhone=000000, groups=[], middlename=test2, photo=PHOTO;ENCODING=BASE64;TYPE=JPEG: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, lastname=test3, email3=test5@test.com, email2=t@t.com, phone=+79110001122, name=test3, nickname=test4, workPhone=123456, id=79, email=test@test.com}
+23:41:46.733 [Test worker] DEBUG org.hibernate.resource.jdbc.internal.LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+23:41:46.734 [Test worker] DEBUG org.hibernate.resource.jdbc.internal.LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
