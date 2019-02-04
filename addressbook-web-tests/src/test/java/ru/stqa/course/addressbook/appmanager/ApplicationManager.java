@@ -56,7 +56,7 @@ public class ApplicationManager {
             capabilities.setBrowserName(browser);
             wd = new RemoteWebDriver(new URL(properties.getProperty("selenium.server")),capabilities);
         }
-        wd.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+        wd.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 
         wd.get(properties.getProperty("web.baseUrl"));
         groupHelper = new GroupHelper(wd);
