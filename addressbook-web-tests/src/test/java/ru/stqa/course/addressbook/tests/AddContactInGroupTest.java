@@ -16,18 +16,27 @@ public class AddContactInGroupTest extends TestBase {
     private SessionFactory sessionFactory;
 
     @BeforeMethod
-    public void ensurePreconditions(){
+    public void ensurePreconditions() {
+        long n = System.currentTimeMillis();
         app.goTo().homePage();
         if (app.db().contacts().size() == 0) {
             app.goTo().contactPage();
             app.contact().create(new ContactData().withName("test3").withMiddlename("test2").withLastname("test3").withNickname("test4").withPhone("+79110001122").withEmail("test@test.com"), true);
         }
-        if ( app.db().groups().size() == 0 ) {
+        if (app.db().groups().size() == 0) {
             app.goTo().groupPage();
             app.group().create(new GroupData().withName("test1"));
         }
-    }
 
+        for (ContactData cont1 : app.db().contacts()) {
+            Groups groups1 = app.db().groups();
+
+            if (cont1.getGroups().size() == groups1.size()) {
+                app.goTo().groupPage();
+                app.group().create(new GroupData().withName(String.format("test%s", n)));
+            }
+        }
+    }
 
     @Test
     public void testAddContactInGroup () {

@@ -12,8 +12,8 @@ import static org.hamcrest.MatcherAssert.assertThat;
 public class DeleteContactFromGroupTest extends TestBase {
 
     @BeforeMethod
-    public void ensurePreconditions(){
-        if ( app.db().groups().size() == 0 ) {
+    public void ensurePreconditions() {
+        if (app.db().groups().size() == 0) {
             app.goTo().groupPage();
             app.group().create(new GroupData().withName("test1"));
         }
@@ -24,6 +24,13 @@ public class DeleteContactFromGroupTest extends TestBase {
             app.contact().create(new ContactData().withName("test3").withMiddlename("test2").withLastname("test3").withNickname("test4").withPhone("+79110001122").withEmail("test@test.com"), true);
         }
 
+        for (GroupData group: app.db().groups()) {
+            Contacts contacts = app.db().contInGroup(group);
+            if (contacts.size() == 0) {
+                app.goTo().homePage();
+                app.contact().addContactInGroup(app.db().contacts().iterator().next(), group);
+            } break;
+        }
     }
 
     @Test
