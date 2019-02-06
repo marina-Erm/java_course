@@ -34,33 +34,35 @@ public class AddContactInGroupTest extends TestBase {
             if (cont1.getGroups().size() == groups1.size()) {
                 app.goTo().groupPage();
                 app.group().create(new GroupData().withName(String.format("test%s", n)));
+                break;
             }
         }
     }
 
     @Test
     public void testAddContactInGroup () {
-        for (ContactData cont : app.db().contacts()) {
-            Groups groups = app.db().groups();
+       Contacts cont = app.db().contacts();
+    Groups groups = app.db().groups();
 
-           if (cont.getGroups().size() != groups.size()) {
+    ContactData c1 = cont.iterator().next();
+           if (c1.getGroups().size() != groups.size()) {
 
-             groups.removeAll(cont.getGroups());
+             groups.removeAll(c1.getGroups());
              GroupData group = groups.iterator().next();
              Contacts before = app.db().contInGroup(group);
 
                app.goTo().homePage();
-               app.contact().addContactInGroup(cont, group);
+               app.contact().addContactInGroup(c1, group);
 
                Contacts after = app.db().contInGroup(group);
 
                assertThat(app.contact().contactCount(), equalTo(before.size() + 1));
-               assertThat(after, equalTo(before.withAdded(cont.inGroup(group))));
+               assertThat(after, equalTo(before.withAdded(c1.inGroup(group))));
 
              verifyContactInGroupListInUI(group);
-             return;
+            // return;
             }
 
         }
     }
-  }
+

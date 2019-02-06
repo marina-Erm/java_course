@@ -5,6 +5,7 @@ import org.testng.annotations.Test;
 import ru.stqa.course.addressbook.model.ContactData;
 import ru.stqa.course.addressbook.model.Contacts;
 import ru.stqa.course.addressbook.model.GroupData;
+import ru.stqa.course.addressbook.model.Groups;
 
 import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.MatcherAssert.assertThat;
@@ -29,30 +30,32 @@ public class DeleteContactFromGroupTest extends TestBase {
             if (contacts.size() == 0) {
                 app.goTo().homePage();
                 app.contact().addContactInGroup(app.db().contacts().iterator().next(), group);
-            } break;
+                break;
+            }
         }
     }
 
     @Test
     public void testDeleteContactFromGroup() {
 
-        for (GroupData group: app.db().groups()) {
-            app.goTo().listContInGroup(group);
-            Contacts contacts = app.db().contInGroup(group);
+        Groups group = app.db().groups();
+        GroupData group1 = group.iterator().next();
+            app.goTo().listContInGroup(group1);
+            Contacts contacts = app.db().contInGroup(group1);
 
             if (contacts.size() != 0) {
 
             ContactData cont = contacts.iterator().next();
-            Contacts before = app.db().contInGroup(group);
-            app.contact().deleteContFromGroup(group, cont);
-            Contacts after = app.db().contInGroup(group);
+            Contacts before = app.db().contInGroup(group1);
+            app.contact().deleteContFromGroup(group1, cont);
+            Contacts after = app.db().contInGroup(group1);
 
             assertThat(app.contact().contactCount(), equalTo(before.size() - 1));
-            assertThat(after, equalTo(before.without(cont.inGroup(group))));
+            assertThat(after, equalTo(before.without(cont.inGroup(group1))));
 
-            verifyContactInGroupListInUI(group);
-            return;
+            verifyContactInGroupListInUI(group1);
+            //return;
         }
     }
   }
-}
+
